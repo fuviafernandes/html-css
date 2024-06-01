@@ -8,17 +8,23 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens-projeto/wallpaper002.jpg');
             background-position: center bottom;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+            /* Shorthand - background 
+                color > image > position > repeat > [size (as vzs não funciona, então coloquei sem separado)] > attachment
+            */
+            background: black url('imagens-projeto/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
 
-            width: 400px;
+            max-width: 400px;
             padding: 30px;
             margin: auto;
             border: 1px solid darkblue;        
